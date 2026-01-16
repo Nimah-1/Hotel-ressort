@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining | Azure Peak Adventure Resort</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .menu-section {
+            margin-bottom: 60px;
+        }
+
+        .menu-category-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .menu-category-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 10px auto 0;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-item {
+            background: #fff;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .dish-details h4 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .dish-details p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .dish-price {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            white-space: nowrap;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">AZURE PEAK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="dining.html" class="active">Dining</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header"
+        style="background-image: url('assets/images/dining_header.png'); background-position: bottom;">
+        <!-- Fallback image, ideally generate a dining specific one but hero works for now -->
+        <div class="header-overlay">
+            <h1>Culinary Journeys</h1>
+            <p>Farm-to-table excellence inspired by local flavors.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center" style="max-width: 700px; margin: 0 auto 60px auto;">
+                <h2 class="section-title">The Canopy Restaurant</h2>
+                <p>Experience open-air dining with breathtaking views of the valley. Our chefs craft daily menus using
+                    organic ingredients from our own garden and local farmers.</p>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu-section">
+                <h3 class="menu-category-title">Breakfast</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Summit Acai Bowl</h4>
+                            <p>Organic acai, homemade granola, tropical fruits, honey.</p>
+                        </div>
+                        <div class="dish-price">$18</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Forest Truffle Omelet</h4>
+                            <p>Free-range eggs, wild mushrooms, truffle oil, goat cheese.</p>
+                        </div>
+                        <div class="dish-price">$22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Sunrise Pancakes</h4>
+                            <p>Fluffy banana pancakes, maple syrup, toasted macadamia nuts.</p>
+                        </div>
+                        <div class="dish-price">$16</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Avocado Toast Royale</h4>
+                            <p>Sourdough, smashed avocado, poached egg, chili flakes.</p>
+                        </div>
+                        <div class="dish-price">$20</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="menu-section">
+                <h3 class="menu-category-title">Lunch</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Jungle Caesar Salad</h4>
+                            <p>Romaine, grilled chicken, plantain croutons, lime dressing.</p>
+                        </div>
+                        <div class="dish-price">$24</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>River Catch Tacos</h4>
+                            <p>Fresh local fish, mango salsa, cabbage slaw, chipotle mayo.</p>
+                        </div>
+                        <div class="dish-price">$26</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Wagyu Burger</h4>
+                            <p>Wagyu patty, cheddar, caramelized onions, truffle fries.</p>
+                        </div>
+                        <div class="dish-price">$28</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dinner -->
+            <div class="menu-section">
+                <h3 class="menu-category-title">Dinner</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Grilled River Prawns</h4>
+                            <p>Garlic butter, lemon herbs, saffron rice.</p>
+                        </div>
+                        <div class="dish-price">$38</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Herb-Crusted Lamb Rack</h4>
+                            <p>Roasted root vegetables, mint jus, mashed potato.</p>
+                        </div>
+                        <div class="dish-price">$45</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="dish-details">
+                            <h4>Wild Mushroom Risotto</h4>
+                            <p>Arborio rice, parmesan crisp, white wine reduction.</p>
+                        </div>
+                        <div class="dish-price">$32</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Azure Peak Adventure Resort.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

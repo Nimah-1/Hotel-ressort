@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Suites | Azure Peak Adventure Resort</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">AZURE PEAK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" class="active">Rooms</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-image: url('assets/images/room_deluxe.png');">
+        <div class="header-overlay">
+            <h1>Accommodations</h1>
+            <p>Sanctuaries designed for comfort and connection.</p>
+        </div>
+    </header>
+
+    <!-- Rooms List -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="room-list">
+                <!-- Room 1 -->
+                <div class="room-card-horizontal">
+                    <div class="room-img">
+                        <img src="assets/images/room_deluxe.png" alt="Deluxe Wilderness Room">
+                    </div>
+                    <div class="room-info">
+                        <h2>Deluxe Wilderness Room</h2>
+                        <ul class="amenities">
+                            <li>King Size Bed</li>
+                            <li>Jungle View</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Breakfast Included</li>
+                        </ul>
+                        <p>Experience the ultimate in eco-luxury. Our Deluxe rooms offer floor-to-ceiling windows that
+                            blur the line between indoors and out.</p>
+                        <div class="price-action">
+                            <span class="price">$350 / night</span>
+                            <button class="btn btn-primary" onclick="openBooking('Deluxe Wilderness Room')">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 2 -->
+                <div class="room-card-horizontal">
+                    <div class="room-img">
+                        <img src="assets/images/room_ocean.png" alt="Ocean View Suite">
+                    </div>
+                    <div class="room-info">
+                        <h2>Ocean View Suite</h2>
+                        <ul class="amenities">
+                            <li>Panoramic Ocean View</li>
+                            <li>Private Balcony</li>
+                            <li>Infinity Pool Access</li>
+                            <li>Butler Service</li>
+                        </ul>
+                        <p>Wake up to the sound of waves and an endless horizon. The Ocean View Suite is our most
+                            requested accommodation.</p>
+                        <div class="price-action">
+                            <span class="price">$550 / night</span>
+                            <button class="btn btn-primary" onclick="openBooking('Ocean View Suite')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal (Demo) -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Stay</h2>
+            <p id="selectedRoom">Room: Deluxe Wilderness Room</p>
+            <form id="bookingForm" onsubmit="event.preventDefault(); submitBooking();">
+                <div class="form-group">
+                    <label>Check-in Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Check-out Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking (Demo)</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Azure Peak Adventure Resort.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Simple Modal Logic
+        const modal = document.getElementById("bookingModal");
+        const span = document.getElementsByClassName("close")[0];
+
+        function openBooking(roomName) {
+            document.getElementById("selectedRoom").innerText = "Room: " + roomName;
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function submitBooking() {
+            alert("This is a demo! Booking request simulated successfully.");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

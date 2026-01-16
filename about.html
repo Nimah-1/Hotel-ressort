@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Azure Peak Adventure Resort</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .value-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">AZURE PEAK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header" style="background-image: url('assets/images/hero.png');">
+        <div class="header-overlay">
+            <h1>Our Story</h1>
+            <p>Sustainability, Luxury, and the Spirit of Adventure.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">A Vision of Harmony</h2>
+                <p style="margin-bottom: 20px;">Founded in 2018, Azure Peak Adventure Resort was born from a desire to
+                    create a sanctuary where modern luxury coexists harmoniously with the raw beauty of natures
+                    wilderness. We believe that true luxury is not just about opulent amenities, but about the richness
+                    of the experience and the connection to the land.</p>
+                <p>Our lodges are constructed using reclaimed wood and sustainable materials, powered by 100% renewable
+                    energy. Every aspect of your stay, from our farm-to-table dining to our eco-conscious adventures, is
+                    designed to leave a minimal footprint while leaving a lasting impression on your soul.</p>
+
+                <h3 style="margin-top: 40px; color: var(--secondary-color);">Our Mission</h3>
+                <p>To provide unparalleled adventure and relaxation experiences that inspire a deeper appreciation for
+                    the natural world, while empowering our local community and preserving our environment for future
+                    generations.</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Eco-Conscious</h3>
+                    <p>We are committed to zero-waste practices, solar energy, and protecting the biodiversity of our
+                        surrounding jungle.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Community First</h3>
+                    <p>We proudly employ locally and support regional artisans, farmers, and conservation projects.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Authentic Adventure</h3>
+                    <p>Our experiences are guided by experts who know every trail, river, and hidden gem of this valley.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Azure Peak Adventure Resort.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

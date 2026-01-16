@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Azure Peak Adventure Resort</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">AZURE PEAK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header" style="background-image: url('assets/images/room_ocean.png');">
+        <div class="header-overlay">
+            <h1>Gallery</h1>
+            <p>A glimpse into paradise.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Using placeholder images multiple times for demo grid -->
+                <img src="assets/images/room_deluxe.png" alt="Deluxe Room">
+                <img src="assets/images/room_ocean.png" alt="Ocean View">
+                <img src="assets/images/adventure_hiking.png" alt="Hiking">
+                <img src="assets/images/adventure_kayaking.png" alt="Kayaking">
+
+                <!-- Filters for variety -->
+                <img src="assets/images/hero.png" alt="Resort View">
+                <img src="assets/images/room_ocean.png" style="filter: sepia(0.2);" alt="Balcony View">
+                <img src="assets/images/adventure_hiking.png" style="filter: hue-rotate(15deg);" alt="Forest Walk">
+                <img src="assets/images/room_deluxe.png" style="filter: brightness(1.1);" alt="Eco Lodge">
+
+                <img src="assets/images/adventure_kayaking.png" style="filter: contrast(1.1);" alt="River Morning">
+                <img src="assets/images/hero.png" style="filter: grayscale(0.2);" alt="Main Pool">
+                <img src="assets/images/room_ocean.png" style="filter: saturate(1.2);" alt="Sunset">
+                <img src="assets/images/adventure_hiking.png" style="filter: brightness(0.9);" alt="Nature Trail">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Azure Peak Adventure Resort.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
